@@ -1,5 +1,6 @@
 document.documentElement.classList.add("js");
 
+const SITE_VERSION = "20260625-oss-refresh";
 let content = {};
 let currentLang = "zh";
 
@@ -7,7 +8,7 @@ async function loadContent() {
   const files = ["meta", "about", "education", "projects", "experience", "skills", "contributions"];
   const results = await Promise.all(
     files.map(async (file) => {
-      const response = await fetch(`./content/${file}.json`);
+      const response = await fetch(`./content/${file}.json?v=${SITE_VERSION}`);
       if (!response.ok) throw new Error(`Failed to load ${file}.json (${response.status})`);
       return response.json();
     })
