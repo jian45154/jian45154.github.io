@@ -1,0 +1,84 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate content JSON
+        run: |
+          python -m json.tool content/about.json >/dev/null
+          python -m json.tool content/contributions.json >/dev/null
+          python -m json.tool content/education.json >/dev/null
+          python -m json.tool content/experience.json >/dev/null
+          python -m json.tool content/meta.json >/dev/null
+          python -m json.tool content/projects.json >/dev/null
+          python -m json.tool content/skills.json >/dev/null
+
+      - name: Prepare site artifact
+        run: |
+          mkdir -p _site
+          rsync -av --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
+          version="${GITHUB_SHA}"
+          python - <<'PY'
+          from pathlib import Path
+          import os
+
+          version = os.environ["GITHUB_SHA"]
+          for filename in ("index.html", "script.js"):
+              path = Path("_site") / filename
+              text = path.read_text(encoding="utf-8")
+              if "__SITE_VERSION__" not in text:
+                  raise SystemExit(f"Missing __SITE_VERSION__ placeholder in {filename}")
+              path.write_text(text.replace("__SITE_VERSION__", version), encoding="utf-8")
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Verify deployed content
+        run: |
+          set -euo pipefail
+          site_url="${{ steps.deployment.outputs.page_url }}"
+          version="${GITHUB_SHA}"
+          for attempt in $(seq 1 12); do
+            html="$(curl -fsSL "${site_url}?verify=${version}")"
+            json="$(curl -fsSL "${site_url}content/contributions.json?v=${version}")"
+            if printf '%s' "$html" | grep -F "script.js?v=${version}" >/dev/null \
+              && printf '%s' "$json" | grep -F "jian45154/redmi-k30-pro-postmarketos" >/dev/null \
+              && printf '%s' "$json" | grep -F "markrahq/markra" >/dev/null; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Deployed page did not expose the expected versioned assets or contribution content."
+          exit 1

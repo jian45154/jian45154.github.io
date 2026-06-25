@@ -1,6 +1,6 @@
 document.documentElement.classList.add("js");
 
-const SITE_VERSION = "20260625-oss-refresh";
+const SITE_VERSION = "__SITE_VERSION__";
 let content = {};
 let currentLang = "zh";
 
