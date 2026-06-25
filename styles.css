@@ -568,6 +568,8 @@ h3 {
 .email-text {
   user-select: all;
   cursor: text;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .contact-row a {

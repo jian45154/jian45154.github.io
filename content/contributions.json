@@ -1,22 +1,46 @@
 {
   "contributions": [
     {
-      "repo": "murongg/markra",
+      "repo": "jian45154/redmi-k30-pro-postmarketos",
+      "title": {
+        "zh": "Redmi K30 Pro / POCO F2 Pro postmarketOS 移植",
+        "en": "Redmi K30 Pro / POCO F2 Pro postmarketOS Port"
+      },
+      "url": "https://github.com/jian45154/redmi-k30-pro-postmarketos",
+      "period": { "zh": "2026年6月", "en": "Jun 2026" },
+      "tech": ["postmarketOS", "Linux Kernel", "pmbootstrap", "Clang/LLVM", "Shell", "Qualcomm SM8250"],
+      "highlights": {
+        "zh": [
+          "为 Redmi K30 Pro / POCO F2 Pro（lmi，SM8250 / Snapdragon 865）整理 postmarketOS / Linux 移植项目，维护 downstream LineageOS 4.19 与 mainline/copydown 两条版本线。",
+          "完成 kernel、DTB 与完整镜像构建；在真实硬件上验证 downstream v27 持久化启动、rootfs 挂载、正常 userspace、SSH 与 Windows RNDIS USB networking。",
+          "推进 downstream Wi-Fi bring-up：D-v43 已验证 wlan0 / p2p0 / wifi-aware0 出现并可扫描；最新 downstream artifact 为 D-v46，mainline/copydown 记录至 M-r7 但尚未 boot-verified。"
+        ],
+        "en": [
+          "Maintained a postmarketOS / Linux port for Redmi K30 Pro / POCO F2 Pro (lmi, SM8250 / Snapdragon 865), tracking both downstream LineageOS 4.19 and mainline/copydown version lines.",
+          "Built kernel, DTBs, and full images; verified downstream v27 persistent boot, rootfs mounting, normal userspace, SSH, and Windows RNDIS USB networking on real hardware.",
+          "Advanced downstream Wi-Fi bring-up: D-v43 verifies wlan0 / p2p0 / wifi-aware0 and successful scans; latest downstream artifact is D-v46, while mainline/copydown is recorded through M-r7 but not yet boot-verified."
+        ]
+      }
+    },
+    {
+      "repo": "markrahq/markra",
       "title": {
         "zh": "Markra - WYSIWYG Markdown 编辑器贡献",
         "en": "Markra - WYSIWYG Markdown Editor"
       },
-      "url": "https://github.com/murongg/markra",
+      "url": "https://github.com/markrahq/markra",
       "period": { "zh": "2026年6月", "en": "Jun 2026" },
-      "tech": ["TypeScript", "React", "Markdown"],
+      "tech": ["TypeScript", "React", "Tauri", "Markdown", "i18n"],
       "highlights": {
         "zh": [
-          "修复编辑器模式切换时滚动进度丢失的问题 (#226, #227)",
-          "A WYSIWYG Markdown 编辑器，支持本地 AI，完全开源，数据留存在本地"
+          "提交并关闭滚动位置丢失问题 #226，合并修复 PR #227，使 visual / source 编辑模式切换时保留滚动进度。",
+          "合并 PR #402，为表格加入列宽模式设置：默认等宽、可选择自动列宽，并保留文档级 toolbar 覆盖。",
+          "补充多表格场景测试、设置页覆盖和多语言文案，贡献于本地优先、支持原生 AI 的 WYSIWYG Markdown 编辑器。"
         ],
         "en": [
-          "Fixed scroll progress not being preserved when switching between editor modes (#226, #227)",
-          "A WYSIWYG Markdown editor with native AI. Fully open source, free to use, data stays local."
+          "Filed and closed scroll-loss issue #226, then merged PR #227 to preserve scroll progress when switching between visual and source editor modes.",
+          "Merged PR #402 to add table column width mode settings: even by default, auto as an opt-in mode, with document-level toolbar overrides preserved.",
+          "Added focused multi-table tests, settings coverage, and localized copy for a local-first WYSIWYG Markdown editor with native AI."
         ]
       }
     }
