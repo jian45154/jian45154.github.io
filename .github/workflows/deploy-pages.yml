@@ -73,7 +73,8 @@ jobs:
           for attempt in $(seq 1 12); do
             html="$(curl -fsSL "${site_url}?verify=${version}")"
             json="$(curl -fsSL "${site_url}content/contributions.json?v=${version}")"
-            if printf '%s' "$html" | grep -F "script.js?v=${version}" >/dev/null \
+            if printf '%s' "$html" | grep -F "styles.css?v=${version}" >/dev/null \
+              && printf '%s' "$html" | grep -F "script.js?v=${version}" >/dev/null \
               && printf '%s' "$json" | grep -F "jian45154/redmi-k30-pro-postmarketos" >/dev/null \
               && printf '%s' "$json" | grep -F "markrahq/markra" >/dev/null; then
               exit 0

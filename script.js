@@ -236,7 +236,7 @@ const translations = {
   zh: {
     "nav.personal": "业余",
     "nav.work": "工作",
-    "nav.github": "GitHub",
+    "nav.github": "GitHub ↗",
     "hero.personal": "业余与好奇",
     "hero.personalNote": "摄影、骑行、自然与动手探索",
     "hero.work": "工作与实践",
@@ -269,7 +269,7 @@ const translations = {
   en: {
     "nav.personal": "Personal",
     "nav.work": "Work",
-    "nav.github": "GitHub",
+    "nav.github": "GitHub ↗",
     "hero.personal": "Life & curiosity",
     "hero.personalNote": "Photography, cycling, nature, and making",
     "hero.work": "Work & practice",
