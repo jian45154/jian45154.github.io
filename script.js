@@ -106,6 +106,7 @@ function renderProjects() {
             <span class="card-period">${t(project.period)}</span>
             <span class="card-org">${t(project.org)}</span>
           </div>
+          ${project.category ? `<p class="card-kind">${t(project.category)}</p>` : ""}
           <h4 class="card-title">${t(project.title)}</h4>
           <p class="card-tech">${project.tech?.join(" · ") || ""}</p>
           <ul class="card-highlights">
@@ -129,6 +130,7 @@ function renderContributions() {
             <span class="card-period">${t(contribution.period)}</span>
             <a class="card-repo" href="${contribution.url}" target="_blank" rel="noopener noreferrer">${contribution.repo} ↗</a>
           </div>
+          ${contribution.kind ? `<p class="card-kind">${t(contribution.kind)}</p>` : ""}
           <h4 class="card-title">${t(contribution.title)}</h4>
           <p class="card-tech">${contribution.tech?.join(" · ") || ""}</p>
           <ul class="card-highlights">
@@ -254,10 +256,10 @@ const translations = {
     "work.body": "生物医学工程、医疗器械制造、工艺改进和实用系统原型。",
     "education.eyebrow": "Education",
     "education.title": "教育背景",
-    "projects.eyebrow": "Practice",
-    "projects.title": "项目经历",
-    "contributions.eyebrow": "Open Source",
-    "contributions.title": "开源贡献",
+    "projects.eyebrow": "Portfolio",
+    "projects.title": "代表项目",
+    "contributions.eyebrow": "Public Code",
+    "contributions.title": "开源与公开仓库",
     "experience.eyebrow": "Experience",
     "experience.title": "工作经历",
     "skills.eyebrow": "Skills",
@@ -287,10 +289,10 @@ const translations = {
     "work.body": "Biomedical engineering, medical-device manufacturing, process improvement, and practical systems prototyping.",
     "education.eyebrow": "Education",
     "education.title": "Education",
-    "projects.eyebrow": "Practice",
-    "projects.title": "Projects",
-    "contributions.eyebrow": "Open Source",
-    "contributions.title": "Open Source Contributions",
+    "projects.eyebrow": "Portfolio",
+    "projects.title": "Selected Projects",
+    "contributions.eyebrow": "Public Code",
+    "contributions.title": "Open Source & Public Repositories",
     "experience.eyebrow": "Experience",
     "experience.title": "Work Experience",
     "skills.eyebrow": "Skills",

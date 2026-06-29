@@ -1,11 +1,35 @@
 {
   "contributions": [
     {
+      "repo": "jian45154/link2context",
+      "title": {
+        "zh": "灵渠（Link2Context）",
+        "en": "Link2Context"
+      },
+      "kind": { "zh": "个人公开仓库", "en": "Own Public Repository" },
+      "url": "https://github.com/jian45154/link2context",
+      "period": { "zh": "近期", "en": "Recent" },
+      "tech": ["Python", "CLI", "SQLite", "JSON", "Markdown", "Local-first AI Workflows"],
+      "highlights": {
+        "zh": [
+          "构建本地优先的 CLI / Python 工具，将公开微信和小红书链接转换为 context.json、context.md、SQLite 存储记录、图谱导出和 agent handoff bundles。",
+          "设计保守的提取边界：不绕过平台限制、不抓取评论/点赞、不泄露 cookie，并对不完整提取给出明确质量警告。",
+          "实现离线 fixture 回归测试、batch manifests、本地查询命令和下游 AI agent 工作流的导出契约验证。"
+        ],
+        "en": [
+          "Built a local-first CLI/Python library that converts public WeChat and Xiaohongshu links into context.json, context.md, SQLite store entries, graph exports, and agent handoff bundles.",
+          "Designed conservative extraction boundaries: no platform bypass, no comments/likes scraping, no cookie leakage, and explicit quality warnings for partial extraction.",
+          "Implemented offline fixture regression tests, batch manifests, local query commands, and verified export contracts for downstream AI-agent workflows."
+        ]
+      }
+    },
+    {
       "repo": "jian45154/redmi-k30-pro-postmarketos",
       "title": {
         "zh": "Redmi K30 Pro / POCO F2 Pro postmarketOS 移植",
         "en": "Redmi K30 Pro / POCO F2 Pro postmarketOS Port"
       },
+      "kind": { "zh": "个人公开仓库", "en": "Own Public Repository" },
       "url": "https://github.com/jian45154/redmi-k30-pro-postmarketos",
       "period": { "zh": "2026年6月", "en": "Jun 2026" },
       "tech": ["postmarketOS", "Linux Kernel", "pmbootstrap", "Clang/LLVM", "Shell", "Qualcomm SM8250"],
@@ -28,6 +52,7 @@
         "zh": "Markra - WYSIWYG Markdown 编辑器贡献",
         "en": "Markra - WYSIWYG Markdown Editor"
       },
+      "kind": { "zh": "外部开源贡献", "en": "External Open-source Contribution" },
       "url": "https://github.com/markrahq/markra",
       "period": { "zh": "2026年6月", "en": "Jun 2026" },
       "tech": ["TypeScript", "React", "Tauri", "Markdown", "i18n"],
@@ -41,6 +66,29 @@
           "Filed and closed scroll-loss issue #226, then merged PR #227 to preserve scroll progress when switching between visual and source editor modes.",
           "Merged PR #402 to add table column width mode settings: even by default, auto as an opt-in mode, with document-level toolbar overrides preserved.",
           "Added focused multi-table tests, settings coverage, and localized copy for a local-first WYSIWYG Markdown editor with native AI."
+        ]
+      }
+    },
+    {
+      "repo": "Xiaohongshu Chrome extension adaptation",
+      "title": {
+        "zh": "小红书本地归档扩展二次封装",
+        "en": "Xiaohongshu Local Archive Extension Adaptation"
+      },
+      "kind": { "zh": "开源项目改造与二次封装", "en": "Open-source Adaptation & Packaging" },
+      "url": "https://github.com/jian45154",
+      "period": { "zh": "近期", "en": "Recent" },
+      "tech": ["Chrome Extension", "Manifest V3", "JavaScript", "faster-whisper", "Local Transcription"],
+      "highlights": {
+        "zh": [
+          "基于他人的 Chrome extension 进行修改和二次封装，用于用户发起的小红书内容本地归档工作流。",
+          "扩展导出流程，将笔记文本、评论、图片和视频打包为本地 ZIP，并接入可选的本地 faster-whisper 转录服务。",
+          "强调本地处理、容错下载和用户有权使用内容的边界，避免将媒体上传到云端服务。"
+        ],
+        "en": [
+          "Adapted and repackaged an existing Chrome extension into a local archive workflow for user-initiated Xiaohongshu content.",
+          "Extended the export flow to package post text, comments, images, and videos into a local ZIP, with optional local faster-whisper transcription.",
+          "Focused on local processing, failure-tolerant downloads, and clear boundaries around content the user has permission to use."
         ]
       }
     }
