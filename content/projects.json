@@ -1,6 +1,60 @@
 {
   "projects": [
     {
+      "title": { "zh": "Link2Context", "en": "Link2Context" },
+      "period": { "zh": "近期", "en": "Recent" },
+      "org": { "zh": "个人项目", "en": "Solo Project" },
+      "tech": ["Python", "CLI", "SQLite", "JSON", "Markdown", "Local-first AI Workflows"],
+      "highlights": {
+        "zh": [
+          "构建本地优先的 CLI / Python 工具，将公开微信和小红书链接转换为 context.json、context.md、SQLite 存储记录、图谱导出和 agent handoff bundles。",
+          "设计保守的提取边界：不绕过平台限制、不抓取评论/点赞、不泄露 cookie，并对不完整提取给出明确质量警告。",
+          "实现离线 fixture 回归测试、batch manifests、本地查询命令和下游 AI agent 工作流的导出契约验证。"
+        ],
+        "en": [
+          "Built a local-first CLI/Python library that converts public WeChat and Xiaohongshu links into context.json, context.md, SQLite store entries, graph exports, and agent handoff bundles.",
+          "Designed conservative extraction boundaries: no platform bypass, no comments/likes scraping, no cookie leakage, and explicit quality warnings for partial extraction.",
+          "Implemented offline fixture regression tests, batch manifests, local query commands, and verified export contracts for downstream AI-agent workflows."
+        ]
+      }
+    },
+    {
+      "title": { "zh": "边缘生物信号 AI 课程", "en": "Edge Biosignal AI Course" },
+      "period": { "zh": "近期", "en": "Recent" },
+      "org": { "zh": "个人学习项目", "en": "Solo Learning Project" },
+      "tech": ["TinyML", "Biosignal AI", "Edge AI", "Static Site", "Learning Design"],
+      "highlights": {
+        "zh": [
+          "创建关于 TinyML 和边缘生物信号 AI 的静态自学课程，将论文系列整理为适合初学者的模块、术语、测验和进度追踪。",
+          "组织生物信号基础、TinyML、神经形态传感、边缘训练、隐私和泛化等主题。",
+          "将材料设计为公开学习作品，连接生物医学工程知识和实际 AI 部署约束。"
+        ],
+        "en": [
+          "Created a static self-study course on TinyML and edge biosignal AI, synthesizing a paper series into beginner-friendly modules, terminology, quizzes, and progress tracking.",
+          "Organised topics across biosignal fundamentals, TinyML, neuromorphic sensing, edge training, privacy, and generalisation.",
+          "Designed the material as a public learning artifact linking biomedical engineering knowledge with practical AI deployment constraints."
+        ]
+      }
+    },
+    {
+      "title": { "zh": "小红书本地归档扩展", "en": "Xiaohongshu Local Archive Extension" },
+      "period": { "zh": "近期", "en": "Recent" },
+      "org": { "zh": "个人项目", "en": "Solo Project" },
+      "tech": ["Chrome Extension", "Manifest V3", "JavaScript", "faster-whisper", "Local Transcription"],
+      "highlights": {
+        "zh": [
+          "开发 Manifest V3 Chrome 扩展，将用户发起保存的小红书笔记文本、评论、图片和视频导出为本地 ZIP 包。",
+          "集成可选的本地 faster-whisper 转录服务，在不上传媒体到云端的情况下生成 TXT、SRT 和 JSON 输出。",
+          "围绕用户有权使用的内容，设计隐私优先的本地处理边界和容错下载行为。"
+        ],
+        "en": [
+          "Developed a Manifest V3 Chrome extension to export user-initiated Xiaohongshu post text, comments, images, and videos into a local ZIP package.",
+          "Integrated an optional local faster-whisper transcription service to generate TXT, SRT, and JSON outputs without uploading media to cloud services.",
+          "Designed privacy-first local processing boundaries and failure-tolerant download behaviour for end-user content archiving where the user has permission to use the content."
+        ]
+      }
+    },
+    {
       "title": { "zh": "卧式脊柱操控器项目", "en": "Supine Spine Manipulator" },
       "period": { "zh": "2018年10月", "en": "Oct 2018" },
       "org": { "zh": "大学团队项目", "en": "University Group Project" },

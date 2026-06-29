@@ -2,7 +2,7 @@ document.documentElement.classList.add("js");
 
 const SITE_VERSION = "__SITE_VERSION__";
 let content = {};
-let currentLang = "zh";
+let currentLang = "en";
 
 async function loadContent() {
   const files = ["meta", "about", "education", "projects", "experience", "skills", "contributions"];
@@ -19,7 +19,7 @@ async function loadContent() {
 
 function t(value) {
   if (!value) return "";
-  return typeof value === "string" ? value : value[currentLang] || value.zh || value.en || "";
+  return typeof value === "string" ? value : value[currentLang] || value.en || value.zh || "";
 }
 
 function setText(selector, value) {
@@ -57,8 +57,8 @@ function renderHero() {
   setText(
     '[data-field="hero-title"]',
     currentLang === "zh"
-      ? "用工程方法做生物与人之间的连接，也保留对世界的好奇心。"
-      : "I use engineering to connect biology and people, while staying curious about the world."
+      ? "我关注医疗器械制造、工艺改进、嵌入式 Linux、生物信号学习和隐私优先 AI 工具，把复杂问题做成可测试、可使用的系统。"
+      : "Biomedical engineer building practical systems across medical devices, embedded Linux, biosignal learning, and privacy-aware AI workflows."
   );
   setText('[data-field="contact-email"]', meta.contact?.email || "");
 }
@@ -198,7 +198,7 @@ function render() {
 }
 
 function applyLanguage(lang) {
-  currentLang = translations[lang] ? lang : "zh";
+  currentLang = translations[lang] ? lang : "en";
   document.documentElement.lang = currentLang === "en" ? "en" : "zh-CN";
   localStorage.setItem("site-lang", currentLang);
 
@@ -241,7 +241,7 @@ const translations = {
     "hero.personalNote": "摄影、骑行、自然与动手探索",
     "hero.work": "工作与实践",
     "hero.workNote": "工程、项目、经历与技能",
-    "home.location": "悉尼 / 线上",
+    "home.location": "悉尼，新南威尔士，澳大利亚",
     "portrait.caption": "在路上观察，也在工作台上验证。",
     "personal.title": "业余，是另一种认真。",
     "practice.prototype": "3D 打印与快速原型",
@@ -250,8 +250,8 @@ const translations = {
     "practice.signalBody": "连接传感器、控制与算法，构建完整的采集与分析系统。",
     "practice.microfluidics": "微流控与表面处理",
     "practice.microfluidicsBody": "在微观尺度进行精密控制，探索等离子体表面处理的应用。",
-    "work.title": "把想法变成可以测试的东西。",
-    "work.body": "从生物医学工程、制造与装配，到面向真实约束的原型和流程改进。",
+    "work.title": "把想法变成可以测试的系统。",
+    "work.body": "生物医学工程、医疗器械制造、工艺改进和实用系统原型。",
     "education.eyebrow": "Education",
     "education.title": "教育背景",
     "projects.eyebrow": "Practice",
@@ -274,7 +274,7 @@ const translations = {
     "hero.personalNote": "Photography, cycling, nature, and making",
     "hero.work": "Work & practice",
     "hero.workNote": "Engineering, projects, experience, and skills",
-    "home.location": "Sydney / Online",
+    "home.location": "Sydney, NSW, Australia",
     "portrait.caption": "Observing outdoors, validating at the workbench.",
     "personal.title": "Personal pursuits, taken seriously.",
     "practice.prototype": "3D Printing & Rapid Prototyping",
@@ -283,8 +283,8 @@ const translations = {
     "practice.signalBody": "Connecting sensors, control, and algorithms into complete acquisition and analysis systems.",
     "practice.microfluidics": "Microfluidics & Surface Treatment",
     "practice.microfluidicsBody": "Working with precision at micro scale and exploring plasma surface treatment.",
-    "work.title": "Turning ideas into testable things.",
-    "work.body": "From biomedical engineering and manufacturing to prototypes and process improvements shaped by real constraints.",
+    "work.title": "Turning ideas into testable systems.",
+    "work.body": "Biomedical engineering, medical-device manufacturing, process improvement, and practical systems prototyping.",
     "education.eyebrow": "Education",
     "education.title": "Education",
     "projects.eyebrow": "Practice",
@@ -304,7 +304,7 @@ const translations = {
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     await loadContent();
-    applyLanguage(localStorage.getItem("site-lang") || "zh");
+    applyLanguage(localStorage.getItem("site-lang") || "en");
     initReveal();
   } catch (error) {
     console.error("Unable to load portfolio content:", error);

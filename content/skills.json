@@ -1,16 +1,20 @@
 {
   "skills": [
     {
-      "category": "Technical & Prototyping",
-      "items": ["3D Printing (FDM, SLA)", "Soldering (SMD & Through-Hole)", "Laser Cutting", "Oscilloscopes", "Multimeters", "Function Generators"]
+      "category": "Biomedical & Quality",
+      "items": ["Biomedical Engineering", "Medical Devices", "ISO 13485", "Non-Conformance Reports (NCR)", "Root Cause Analysis", "Process Improvement", "QMS", "Technical Documentation"]
     },
     {
-      "category": "Software & Programming",
-      "items": ["Python (NumPy, Pandas)", "MATLAB", "R", "SolidWorks", "Fusion 360 (Parametric Modelling)", "LTspice", "Eagle (PCB Design)"]
+      "category": "Software & AI Tools",
+      "items": ["Python CLI Development", "SQLite", "JSON / Markdown Data Contracts", "GitHub Actions", "Local-first AI Workflows", "LLM Prompt Orchestration", "Chrome Extension / Manifest V3", "Whisper / ASR Pipeline"]
     },
     {
-      "category": "Professional",
-      "items": ["ISO 13485", "Root Cause Analysis", "Non-Conformance Report (NCR) Process", "Design for Manufacturing (DFM)"]
+      "category": "Embedded & Prototyping",
+      "items": ["Embedded Systems", "Linux / Shell Scripting", "postmarketOS", "USB Networking", "Hardware Troubleshooting", "3D Printing (FDM, SLA)", "Fusion 360", "SolidWorks"]
+    },
+    {
+      "category": "Technical Service",
+      "items": ["Technical Troubleshooting", "Customer-facing Technical Support", "Workshop Operations", "Design for Manufacturing (DFM)", "Bio-signal Processing", "MATLAB", "R"]
     },
     {
       "category": "Languages",

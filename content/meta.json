@@ -4,11 +4,11 @@
     "en": "Weihang (Ian) Jin"
   },
   "tagline": {
-    "zh": "生物医学工程师 · 建造者 · 探索者",
-    "en": "Biomedical Engineer · Builder · Explorer"
+    "zh": "生物医学工程师 | 边缘 AI 与系统原型",
+    "en": "Biomedical Engineer | Edge AI & Systems Prototyping"
   },
   "location": {
-    "value": "Sydney / Online"
+    "value": "Sydney, NSW, Australia"
   },
   "focus": {
     "value": "Biomedical Engineering"
@@ -18,8 +18,6 @@
   },
   "contact": {
     "email": "jian45154@gmail.com",
-    "phone": "0450 263 795",
-    "address": "U3002/36 Walker St., Rhodes NSW 2138",
     "linkedin": "https://www.linkedin.com/in/weihang-ian-jin-91941314a",
     "github": "https://github.com/jian45154"
   },

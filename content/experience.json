@@ -3,15 +3,19 @@
     {
       "company": "Cochlear", "location": "Lane Cove, Australia",
       "title": { "zh": "电子装配员", "en": "Electronic Assembler" },
-      "period": { "zh": "2025年6月 - 2025年", "en": "Jun 2025 - 2025" },
+      "period": { "zh": "2025年1月 - 2025年6月", "en": "Jan 2025 - Jun 2025" },
       "highlights": {
         "zh": [
-          "在 3 类有源植入式医疗器械生产线获得实践经验，支持 NCR 工程评估，协助工艺工程团队改进制造工艺。",
-          "通过识别问题并提出原因假设和可能的解决方案，参与 QMS 持续改进活动。"
+          "在受监管的医疗器械制造环境中，获得 3 类有源植入式医疗器械生产线实践经验。",
+          "支持不合格报告（NCR）的工程评估，包括问题观察、证据收集和根因假设形成。",
+          "通过识别工艺问题并提出实际改进建议，协助工艺工程和 QMS 持续改进活动。",
+          "在高纪律生产环境中工作，遵守文档准确性、可追溯性和质量流程要求。"
         ],
         "en": [
-          "Gained hands-on experience in Class 3 Active Implantable Medical Devices production line. Supported NCR engineering evaluation and assisted process engineering team.",
-          "Participated in QMS Continuous Improvement Activities by identifying issues and proposing hypotheses of causes and possible solutions."
+          "Gained hands-on production-line experience in Class III active implantable medical devices within a regulated medical-device manufacturing environment.",
+          "Supported engineering evaluation of Non-Conformance Reports (NCRs), including issue observation, evidence collection, and root-cause hypothesis development.",
+          "Assisted process engineering and QMS continuous improvement activities by identifying process issues and proposing practical improvement ideas.",
+          "Worked in a high-discipline production setting requiring documentation accuracy, traceability, and adherence to quality procedures."
         ]
       }
     },
@@ -21,12 +25,14 @@
       "period": { "zh": "2024年11月 - 2025年5月", "en": "Nov 2024 - May 2025" },
       "highlights": {
         "zh": [
-          "管理轮滑和球拍运动主车间，亲自和电话处理客户咨询，扩展车间容量。",
-          "通过改进的标签和存储系统，将平均周转时间从一周缩短至三天。"
+          "管理轮滑和球拍运动车间运营，处理技术维修、客户咨询、排期和服务流程。",
+          "通过改进标签、存储和工单跟踪流程，将平均周转时间从一周缩短至三天。",
+          "在保持服务质量和清晰客户沟通的同时，扩展车间服务容量。"
         ],
         "en": [
-          "Managed flagship workshop for wheel sports and racket sports. Addressed customer enquiries in person and via phone.",
-          "Reduced average turnaround time from one week to three days by implementing improved labelling and storage system."
+          "Managed workshop operations for wheel sports and racket sports, handling technical repairs, customer enquiries, scheduling, and service flow.",
+          "Reduced average turnaround time from one week to three days by improving labelling, storage, and job-tracking workflow.",
+          "Expanded workshop capacity while maintaining service quality and clear customer communication."
         ]
       }
     },
@@ -36,14 +42,14 @@
       "period": { "zh": "2024年6月 - 2024年11月", "en": "Jun 2024 - Nov 2024" },
       "highlights": {
         "zh": [
-          "精确诊断和修复机械/技术自行车问题，执行日常维护确保最佳性能。",
-          "向客户宣传自行车护理、维护最佳实践，推广商店服务、升级和配件。",
-          "监督库存控制，与供应商协调及时补货，在快节奏环境中高效协作。"
+          "使用专业工具和结构化排查方法，诊断、保养和维修机械自行车系统。",
+          "在快节奏技术服务环境中管理车间库存、服务记录、客户沟通和供应商协调。",
+          "用易懂语言解释技术问题、维护选项和安全使用建议，建立客户信任。"
         ],
         "en": [
-          "Diagnose and repair mechanical and technical bike issues with precision. Perform routine servicing for optimal bike performance.",
-          "Educate customers on bike care, maintenance best practices, and product features. Promote shop services and accessories.",
-          "Oversee inventory control, coordinate with suppliers for timely restocking. Collaborate efficiently in fast-paced environment."
+          "Diagnosed, serviced, and repaired mechanical bicycle systems using specialist tools and structured troubleshooting.",
+          "Managed workshop stock, service records, customer communication, and supplier coordination in a fast-paced technical service environment.",
+          "Built customer trust by explaining technical issues, maintenance options, and safe-use recommendations in accessible language."
         ]
       }
     },

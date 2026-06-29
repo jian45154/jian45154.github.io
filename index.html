@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,19 +18,19 @@
     <link rel="stylesheet" href="./styles.css?v=__SITE_VERSION__" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Home">WJ</a>
       <nav class="site-nav" aria-label="Page navigation">
-        <a href="#personal" data-i18n="nav.personal">业余</a>
-        <a href="#work" data-i18n="nav.work">工作</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#personal" data-i18n="nav.personal">Personal</a>
       </nav>
       <div class="header-actions">
         <a class="github-link" href="https://github.com/jian45154" target="_blank" rel="noreferrer" data-i18n="nav.github">GitHub ↗</a>
         <div class="lang-switch" aria-label="Language switch">
-          <button class="lang-btn active" type="button" data-lang="zh" aria-pressed="true">中文</button>
-          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
         </div>
       </div>
     </header>
@@ -38,22 +38,22 @@
     <main id="main-content">
       <section id="top" class="hero">
         <div class="hero-copy reveal">
-          <p class="eyebrow" data-field="hero-kicker">生物医学工程师 · 建造者 · 探索者</p>
-          <h1 data-field="brand-name">金苇航 Ian</h1>
-          <p class="hero-statement" data-field="hero-title">用工程方法做生物与人之间的连接，也保留对世界的好奇心。</p>
-          <p class="hero-lead" data-field="hero-lead">悉尼大学生物医学工程荣誉学士背景，实践覆盖快速原型、嵌入式开发、生物信号处理与实验技术。</p>
+          <p class="eyebrow" data-field="hero-kicker">Biomedical Engineer | Edge AI & Systems Prototyping</p>
+          <h1 data-field="brand-name">Weihang (Ian) Jin</h1>
+          <p class="hero-statement" data-field="hero-title">Biomedical engineer building practical systems across medical devices, embedded Linux, biosignal learning, and privacy-aware AI workflows.</p>
+          <p class="hero-lead" data-field="hero-lead">Biomedical Engineering Honours graduate building practical systems across medical-device manufacturing, process improvement, embedded Linux, biosignal learning, and privacy-aware AI workflows.</p>
 
           <div class="hero-routes" aria-label="Explore portfolio">
-            <a class="route-card route-card-personal" href="#personal">
+            <a class="route-card route-card-work" href="#work">
               <span class="route-index">01</span>
-              <strong data-i18n="hero.personal">业余与好奇</strong>
-              <span data-i18n="hero.personalNote">摄影、骑行、自然与动手探索</span>
+              <strong data-i18n="hero.work">Work & practice</strong>
+              <span data-i18n="hero.workNote">Engineering, projects, experience, and skills</span>
               <span class="route-arrow" aria-hidden="true">↓</span>
             </a>
-            <a class="route-card route-card-work" href="#work">
+            <a class="route-card route-card-personal" href="#personal">
               <span class="route-index">02</span>
-              <strong data-i18n="hero.work">工作与实践</strong>
-              <span data-i18n="hero.workNote">工程、项目、经历与技能</span>
+              <strong data-i18n="hero.personal">Life & curiosity</strong>
+              <span data-i18n="hero.personalNote">Photography, cycling, nature, and making</span>
               <span class="route-arrow" aria-hidden="true">↓</span>
             </a>
           </div>
@@ -62,51 +62,17 @@
         <figure class="hero-portrait reveal">
           <img src="./assets/portrait.jpeg" alt="Weihang (Ian) Jin photographing outdoors" />
           <figcaption>
-            <span data-i18n="home.location">悉尼 / 线上</span>
-            <span data-i18n="portrait.caption">在路上观察，也在工作台上验证。</span>
+            <span data-i18n="home.location">Sydney, NSW, Australia</span>
+            <span data-i18n="portrait.caption">Observing outdoors, validating at the workbench.</span>
           </figcaption>
         </figure>
       </section>
 
-      <section id="personal" class="chapter chapter-personal">
-        <div class="chapter-intro reveal">
-          <p class="chapter-number">01 / Personal</p>
-          <h2 data-i18n="personal.title">业余，是另一种认真。</h2>
-          <p data-field="about-body">我持续关注生物、自然博物学和人与环境的关系，也喜欢让工程、观察与审美在同一个项目里相遇。</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span>01</span>
-            <h3 data-i18n="practice.prototype">3D 打印与快速原型</h3>
-            <p data-i18n="practice.prototypeBody">将创意转化为可触摸的实物，从概念验证到功能原型。</p>
-          </article>
-          <article class="feature-card reveal">
-            <span>02</span>
-            <h3 data-i18n="practice.signal">嵌入式开发与生物信号处理</h3>
-            <p data-i18n="practice.signalBody">连接传感器、控制与算法，构建完整的采集与分析系统。</p>
-          </article>
-          <article class="feature-card reveal">
-            <span>03</span>
-            <h3 data-i18n="practice.microfluidics">微流控与表面处理</h3>
-            <p data-i18n="practice.microfluidicsBody">在微观尺度进行精密控制，探索等离子体表面处理的应用。</p>
-          </article>
-        </div>
-
-        <div class="interest-panel reveal">
-          <div>
-            <p class="eyebrow">Field notes</p>
-            <h3 data-field="about-title">我关注什么</h3>
-          </div>
-          <div class="chips" id="about-chips"></div>
-        </div>
-      </section>
-
       <section id="work" class="chapter chapter-work">
         <div class="chapter-intro reveal">
-          <p class="chapter-number">02 / Work</p>
-          <h2 data-i18n="work.title">把想法变成可以测试的东西。</h2>
-          <p data-i18n="work.body">从生物医学工程、制造与装配，到面向真实约束的原型和流程改进。</p>
+          <p class="chapter-number">01 / Work</p>
+          <h2 data-i18n="work.title">Turning ideas into testable systems.</h2>
+          <p data-i18n="work.body">Biomedical engineering, medical-device manufacturing, process improvement, and practical systems prototyping.</p>
         </div>
 
         <section id="education" class="content-section reveal">
@@ -160,6 +126,40 @@
           </div>
           <div class="skills-grid"></div>
         </section>
+      </section>
+
+      <section id="personal" class="chapter chapter-personal">
+        <div class="chapter-intro reveal">
+          <p class="chapter-number">02 / Personal</p>
+          <h2 data-i18n="personal.title">Personal pursuits, taken seriously.</h2>
+          <p data-field="about-body">I stay interested in biology, natural history, and the relationship between people and their environment. I like bringing engineering, observation, and aesthetics into the same project.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3 data-i18n="practice.prototype">3D Printing & Rapid Prototyping</h3>
+            <p data-i18n="practice.prototypeBody">Turning ideas into tangible forms, from proof of concept to functional prototypes.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>02</span>
+            <h3 data-i18n="practice.signal">Embedded Development & Bio-signal Processing</h3>
+            <p data-i18n="practice.signalBody">Connecting sensors, control, and algorithms into complete acquisition and analysis systems.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>03</span>
+            <h3 data-i18n="practice.microfluidics">Microfluidics & Surface Treatment</h3>
+            <p data-i18n="practice.microfluidicsBody">Working with precision at micro scale and exploring plasma surface treatment.</p>
+          </article>
+        </div>
+
+        <div class="interest-panel reveal">
+          <div>
+            <p class="eyebrow">Field notes</p>
+            <h3 data-field="about-title">What I care about</h3>
+          </div>
+          <div class="chips" id="about-chips"></div>
+        </div>
       </section>
 
       <section class="contact-section reveal">
