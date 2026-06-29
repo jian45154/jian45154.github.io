@@ -101,8 +101,29 @@ h3 {
   color: var(--text);
 }
 
-.lang-switch {
+.header-actions {
   justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-link {
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  background: var(--text);
+  color: white;
+}
+
+.lang-switch {
   display: flex;
   gap: 4px;
 }
@@ -646,6 +667,15 @@ button:focus-visible {
 
   .site-nav a {
     font-size: 0.76rem;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .github-link {
+    padding: 6px 7px;
+    font-size: 0.7rem;
   }
 
   .lang-btn {
