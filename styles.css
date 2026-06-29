@@ -532,6 +532,31 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.section-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.section-toggle {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 11px 18px;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.section-toggle:hover {
+  border-color: var(--green);
+  color: var(--green);
+  transform: translateY(-1px);
+}
+
 .exp-item {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;

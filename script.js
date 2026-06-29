@@ -3,6 +3,8 @@ document.documentElement.classList.add("js");
 const SITE_VERSION = "__SITE_VERSION__";
 let content = {};
 let currentLang = "en";
+let showAllExperience = false;
+const INITIAL_EXPERIENCE_COUNT = 4;
 
 async function loadContent() {
   const files = ["meta", "about", "education", "projects", "experience", "skills", "contributions"];
@@ -146,7 +148,10 @@ function renderExperience() {
   const section = document.querySelector("#experience .experience-list");
   if (!section) return;
 
-  section.innerHTML = (content.experience?.experience || [])
+  const items = content.experience?.experience || [];
+  const visibleItems = showAllExperience ? items : items.slice(0, INITIAL_EXPERIENCE_COUNT);
+
+  section.innerHTML = visibleItems
     .map(
       (experience) => `
         <article class="exp-item">
@@ -164,6 +169,26 @@ function renderExperience() {
       `
     )
     .join("");
+
+  const controls = document.querySelector("#experience-controls");
+  if (!controls) return;
+
+  const hiddenCount = Math.max(items.length - INITIAL_EXPERIENCE_COUNT, 0);
+  if (!hiddenCount) {
+    controls.innerHTML = "";
+    return;
+  }
+
+  controls.innerHTML = `
+    <button class="section-toggle" type="button" data-action="toggle-experience" aria-expanded="${showAllExperience}">
+      ${showAllExperience ? t({ zh: "收起早期经历", en: "Show fewer roles" }) : t({ zh: `展开全部经历（另 ${hiddenCount} 条）`, en: `Show all experience (${hiddenCount} more)` })}
+    </button>
+  `;
+
+  controls.querySelector("[data-action='toggle-experience']")?.addEventListener("click", () => {
+    showAllExperience = !showAllExperience;
+    renderExperience();
+  });
 }
 
 function renderSkills() {
