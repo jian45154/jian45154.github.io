@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "title": { "zh": "受限工程协作项目", "en": "Confidential Engineering Collaboration" },
+      "category": { "zh": "脱敏能力证明", "en": "Anonymised Capability Evidence" },
+      "period": { "zh": "近期", "en": "Recent" },
+      "org": { "zh": "保密协作项目", "en": "Confidential Collaboration" },
+      "tech": ["Requirements Clarification", "Technical Documentation", "Validation Planning", "Risk Tracking", "Cross-functional Communication"],
+      "highlights": {
+        "zh": [
+          "在保密边界内参与受限工程项目，负责需求澄清、资料整理、技术方案记录与任务推进，不公开项目目的、对象或应用场景。",
+          "将零散信息转化为可执行的工程记录和验证清单，支持团队在约束条件下比较方案、跟踪风险和确认交付状态。",
+          "获得跨职能沟通、结构化问题拆解、保密协作和从模糊需求到可验证产出的实践经验，用作能力证明。"
+        ],
+        "en": [
+          "Contributed to a restricted engineering project within confidentiality boundaries, covering requirement clarification, evidence organisation, technical notes, and task follow-through without disclosing purpose, subject, or application context.",
+          "Converted fragmented information into actionable engineering records and validation checklists, supporting option comparison, risk tracking, and delivery-status review under constraints.",
+          "Gained practical experience in cross-functional communication, structured problem decomposition, confidential collaboration, and turning ambiguous inputs into verifiable outputs as capability evidence."
+        ]
+      }
+    },
+    {
       "title": { "zh": "边缘生物信号 AI 课程", "en": "Edge Biosignal AI Course" },
       "category": { "zh": "生物医学学习项目", "en": "Biomedical Learning Project" },
       "period": { "zh": "近期", "en": "Recent" },
