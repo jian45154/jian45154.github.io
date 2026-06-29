@@ -263,6 +263,11 @@ const translations = {
   zh: {
     "nav.personal": "业余",
     "nav.work": "工作",
+    "nav.projects": "项目",
+    "nav.publicCode": "公开代码",
+    "nav.experience": "经历",
+    "nav.skills": "技能",
+    "nav.contact": "联系",
     "nav.github": "GitHub ↗",
     "hero.personal": "业余与好奇",
     "hero.personalNote": "摄影、骑行、自然与动手探索",
@@ -296,6 +301,11 @@ const translations = {
   en: {
     "nav.personal": "Personal",
     "nav.work": "Work",
+    "nav.projects": "Projects",
+    "nav.publicCode": "Public Code",
+    "nav.experience": "Experience",
+    "nav.skills": "Skills",
+    "nav.contact": "Contact",
     "nav.github": "GitHub ↗",
     "hero.personal": "Life & curiosity",
     "hero.personalNote": "Photography, cycling, nature, and making",

@@ -69,7 +69,8 @@ h3 {
   top: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 22px;
   align-items: center;
   min-height: 58px;
   padding: 0 max(24px, calc((100vw - 1180px) / 2));
@@ -87,12 +88,22 @@ h3 {
 
 .site-nav {
   display: flex;
-  gap: 28px;
+  justify-content: center;
+  gap: clamp(14px, 2vw, 26px);
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .site-nav a {
   color: var(--muted);
-  font-size: 0.84rem;
+  flex: 0 0 auto;
+  font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -699,8 +710,8 @@ button:focus-visible {
   }
 
   .site-nav {
-    justify-content: center;
-    gap: 18px;
+    justify-content: flex-start;
+    gap: 16px;
   }
 
   .site-nav a {
