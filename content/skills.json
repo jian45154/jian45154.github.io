@@ -6,7 +6,7 @@
     },
     {
       "category": "Software & AI Tools",
-      "items": ["Python CLI Development", "SQLite", "JSON / Markdown Data Contracts", "GitHub Actions", "Local-first AI Workflows", "LLM Prompt Orchestration", "Chrome Extension / Manifest V3", "Whisper / ASR Pipeline"]
+      "items": ["Python CLI Development", "TypeScript / React", "Rust / Tauri Desktop", "SQLite", "JSON / Markdown Data Contracts", "GitHub Actions", "Local-first AI Workflows", "LLM Prompt Orchestration", "Chrome Extension / Manifest V3", "Whisper / ASR Pipeline"]
     },
     {
       "category": "Embedded & Prototyping",

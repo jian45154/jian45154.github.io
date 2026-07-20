@@ -8,18 +8,18 @@
       },
       "kind": { "zh": "个人公开仓库", "en": "Own Public Repository" },
       "url": "https://github.com/jian45154/link2context",
-      "period": { "zh": "近期", "en": "Recent" },
-      "tech": ["Python", "CLI", "SQLite", "JSON", "Markdown", "Local-first AI Workflows"],
+      "period": { "zh": "2026年6–7月", "en": "Jun–Jul 2026" },
+      "tech": ["Python", "CLI", "SQLite", "JSON", "Markdown", "OCR / ASR", "Local-first AI Workflows"],
       "highlights": {
         "zh": [
           "构建本地优先的 CLI / Python 工具，将公开微信和小红书链接转换为 context.json、context.md、SQLite 存储记录、图谱导出和 agent handoff bundles。",
           "设计保守的提取边界：不绕过平台限制、不抓取评论/点赞、不泄露 cookie，并对不完整提取给出明确质量警告。",
-          "实现离线 fixture 回归测试、batch manifests、本地查询命令和下游 AI agent 工作流的导出契约验证。"
+          "补齐端到端媒体处理管线：对图片和 GIF 运行 OCR、对视频运行 ASR，并通过 dry-run、回写校验、重新索引和回归测试控制结果质量。"
         ],
         "en": [
           "Built a local-first CLI/Python library that converts public WeChat and Xiaohongshu links into context.json, context.md, SQLite store entries, graph exports, and agent handoff bundles.",
           "Designed conservative extraction boundaries: no platform bypass, no comments/likes scraping, no cookie leakage, and explicit quality warnings for partial extraction.",
-          "Implemented offline fixture regression tests, batch manifests, local query commands, and verified export contracts for downstream AI-agent workflows."
+          "Added an end-to-end media pipeline for image and GIF OCR and video ASR, with dry-run planning, verified write-back and re-indexing, and regression tests."
         ]
       }
     },
@@ -31,18 +31,18 @@
       },
       "kind": { "zh": "个人公开仓库", "en": "Own Public Repository" },
       "url": "https://github.com/jian45154/redmi-k30-pro-postmarketos",
-      "period": { "zh": "2026年6月", "en": "Jun 2026" },
+      "period": { "zh": "2026年6–7月", "en": "Jun–Jul 2026" },
       "tech": ["postmarketOS", "Linux Kernel", "pmbootstrap", "Clang/LLVM", "Shell", "Qualcomm SM8250"],
       "highlights": {
         "zh": [
           "为 Redmi K30 Pro / POCO F2 Pro（lmi，SM8250 / Snapdragon 865）整理 postmarketOS / Linux 移植项目，维护 downstream LineageOS 4.19 与 mainline/copydown 两条版本线。",
           "完成 kernel、DTB 与完整镜像构建；在真实硬件上验证 downstream v27 持久化启动、rootfs 挂载、正常 userspace、SSH 与 Windows RNDIS USB networking。",
-          "推进 downstream Wi-Fi bring-up：D-v43 已验证 wlan0 / p2p0 / wifi-aware0 出现并可扫描；最新 downstream artifact 为 D-v46，mainline/copydown 记录至 M-r7 但尚未 boot-verified。"
+          "推进硬件启用：D-v46 保持为已验证的 Wi-Fi 基线，最小 Weston GUI 下的屏幕与触控硬件路径已完成实机验证，并发布带校验和的复现归档；D-v52 仅作为后续构建候选记录，M-r7 仍未完成启动验证。"
         ],
         "en": [
           "Maintained a postmarketOS / Linux port for Redmi K30 Pro / POCO F2 Pro (lmi, SM8250 / Snapdragon 865), tracking both downstream LineageOS 4.19 and mainline/copydown version lines.",
           "Built kernel, DTBs, and full images; verified downstream v27 persistent boot, rootfs mounting, normal userspace, SSH, and Windows RNDIS USB networking on real hardware.",
-          "Advanced downstream Wi-Fi bring-up: D-v43 verifies wlan0 / p2p0 / wifi-aware0 and successful scans; latest downstream artifact is D-v46, while mainline/copydown is recorded through M-r7 but not yet boot-verified."
+          "Advanced hardware enablement: D-v46 remains the verified Wi-Fi baseline, while screen and touch were physically verified under a minimal Weston GUI and a checksummed reproduction archive was published; D-v52 is recorded only as a later build candidate, and M-r7 remains unverified at boot."
         ]
       }
     },
@@ -54,18 +54,18 @@
       },
       "kind": { "zh": "外部开源贡献", "en": "External Open-source Contribution" },
       "url": "https://github.com/markrahq/markra",
-      "period": { "zh": "2026年6月", "en": "Jun 2026" },
-      "tech": ["TypeScript", "React", "Tauri", "Markdown", "i18n"],
+      "period": { "zh": "2026年6–7月", "en": "Jun–Jul 2026" },
+      "tech": ["TypeScript", "React", "Rust", "Tauri", "Markdown", "i18n"],
       "highlights": {
         "zh": [
           "提交并关闭滚动位置丢失问题 #226，合并修复 PR #227，使 visual / source 编辑模式切换时保留滚动进度。",
           "合并 PR #402，为表格加入列宽模式设置：默认等宽、可选择自动列宽，并保留文档级 toolbar 覆盖。",
-          "补充多表格场景测试、设置页覆盖和多语言文案，贡献于本地优先、支持原生 AI 的 WYSIWYG Markdown 编辑器。"
+          "合并 PR #443 与 #501：修复设置窗口启动时的错误首帧，加入预热与复用，并在最后一个用户窗口关闭时安全关闭或取消创建辅助窗口。"
         ],
         "en": [
           "Filed and closed scroll-loss issue #226, then merged PR #227 to preserve scroll progress when switching between visual and source editor modes.",
           "Merged PR #402 to add table column width mode settings: even by default, auto as an opt-in mode, with document-level toolbar overrides preserved.",
-          "Added focused multi-table tests, settings coverage, and localized copy for a local-first WYSIWYG Markdown editor with native AI."
+          "Merged PRs #443 and #501 to prevent incorrect first frames when opening Settings, prewarm and reuse its WebView, and close or cancel the auxiliary window when the last user-facing window exits."
         ]
       }
     },
