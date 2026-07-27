@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="金苇航 Ian: Biomedical engineering, hands-on prototyping, and interdisciplinary work">
+</p>
+
 # 金苇航 Ian
 
 Personal portfolio for **金苇航 Ian**, designed and built by **Lucien Auregin**.
